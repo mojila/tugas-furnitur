@@ -30,7 +30,7 @@ export class ItemListComponent implements OnInit {
         this.categorySrv.selectCategory(this.categorySelected)
         this.furnitureList = []
         this.furnitureSrv.loadFurniture(this.categorySelected)
-          .subscribe((data: Response) => this.furnitureList = data.json())
+          .subscribe((data: any) => this.furnitureList = data.json())
       })
   }
 

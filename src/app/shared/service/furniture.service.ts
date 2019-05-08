@@ -26,7 +26,7 @@ export class FurnitureService {
     this.http.get(`http://localhost:3000/api/category/${cat_id}/furniture`)
       .subscribe((data: Response) => this.furnitureList = data.json())
 
-      return this.http.get(`http://localhost:3000/api/category/${cat_id}/furniture`)
+    return this.http.get(`http://localhost:3000/api/category/${cat_id}/furniture`)
   }
 
   getAllFurniture() {

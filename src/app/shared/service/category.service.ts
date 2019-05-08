@@ -1,6 +1,5 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Category } from '../model/category.model';
-import { map } from 'rxjs/operators'
 import { Http, Response } from '@angular/http'
 
 @Injectable()
